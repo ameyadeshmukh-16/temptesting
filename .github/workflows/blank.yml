@@ -28,7 +28,7 @@ jobs:
 
         with:
 
-          ref: dev
+          ref: DEV
  
       - name: Create Pull Request (dev → qa)
 
@@ -50,9 +50,9 @@ jobs:
 
               repo:  context.repo.repo,
 
-              head:  'dev',
+              head:  'DEV',
 
-              base:  'qa',
+              base:  'STAGE',
 
               title: 'Promote dev → qa',
 
